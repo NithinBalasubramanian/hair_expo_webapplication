@@ -13,7 +13,7 @@ class Admin extends CI_Controller{
 	
 	public function index()
 		{
-			if(!$this->get_data_check){
+			if($this->get_data_check()){
 				redirect('Front');
 			}
             // if($this->session->userdata('id') != ""){
@@ -45,7 +45,7 @@ class Admin extends CI_Controller{
                     if($this->input->post('password')){
                        $data['password'] = sha1($this->input->post('password'));
                     }
-					if(!$this->get_data_check){
+					if($this->get_data_check()){
 						redirect('Front');
 					}
 					$insert = $this->Admin_model->create($tablename,$data);
@@ -90,7 +90,7 @@ class Admin extends CI_Controller{
 							}
 						}
 					}
-					if(!$this->get_data_check){
+					if($this->get_data_check()){
 						redirect('Front');
 					}
 						$where['id'] = $edit_id;
@@ -116,7 +116,7 @@ class Admin extends CI_Controller{
                     $this->session->set_userdata('type',$row['type']);
                     $this->session->set_userdata('employee_name',$row['employee_name']);
 				}
-				if(!$this->get_data_check){
+				if($this->get_data_check()){
 					redirect('Front');
 				}
                 redirect('admin');
@@ -130,7 +130,7 @@ class Admin extends CI_Controller{
 		$id=$this->input->post('id');
 		$tablename=$this->input->post('tablename');
 		$profile=$this->Admin_model->table_column($tablename,'id',$id);
-		if(!$this->get_data_check){
+		if($this->get_data_check()){
 			redirect('Front');
 		}
 		foreach($profile as $row)
@@ -188,7 +188,7 @@ class Admin extends CI_Controller{
 				$data = array('img' => $this->upload->data());
 			}
 		}
-		if(!$this->get_data_check){
+		if($this->get_data_check()){
 			redirect('Front');	}
 		$data=array(
 			'company_name'=>$this->input->post('company_name'),
@@ -212,7 +212,7 @@ class Admin extends CI_Controller{
 	    $contact = $this->input->post('contact');
 	    $output = '';
 		$customer_data = $this->Admin_model->table_column_like('customer','contact',$contact);
-		if(!$this->get_data_check){
+		if($this->get_data_check()){
 			redirect('Front');	}
 	    if(count($customer_data) >0){
 	        $output .= '<option>'.count($customer_data).' Customers Found </option>';
@@ -309,7 +309,7 @@ class Admin extends CI_Controller{
     		}else{
     			$data['customer_name']=$this->input->post('customer_id');
 			}
-			if(!$this->get_data_check){
+			if($this->get_data_check()){
 				redirect('Front');
 			}
 		$service = $_POST['service'];
@@ -330,15 +330,21 @@ class Admin extends CI_Controller{
 	public function Insert_order($folder,$page)
 	{
 		// $already = $this->input->post('already_member');
+			$ser_data = $this->input->post('service_id');
+			$ser_got = array();
+			for($i=0 ; $i<count($ser_data);$i++){
+				array_push($ser_got,$ser_data[$i]); 
+			}
+			$serv=implode(',',$ser_got);
 		$data=array(
-			'service_id'=>$this->input->post('service_id'),
+			'service_id'=>$serv,
 			'date'=>$this->input->post('date'),
 			'time'=>$this->input->post('time'),
 			'contact'=>$this->input->post('contact'),
 			'email'=>$this->input->post('email'),
 			'status'=>'1',
 		);
-		if(!$this->get_data_check){
+		if($this->get_data_check()){
 			redirect('Admin');
 		}
 		if($this->input->post('member') != '1')
@@ -377,9 +383,9 @@ class Admin extends CI_Controller{
 	{
 		$get_data = $this->Admin_model->table_column('customer','state','0');
 		if(count($get_data) == 0){
-			return true;
-		}else{
 			return false;
+		}else{
+			return true;
 		}
 	}
 	public function Edit_invoice_setting($tablename,$foldername,$file)
@@ -452,7 +458,7 @@ class Admin extends CI_Controller{
                             }else{
                                 $data_stk['price'] = $price[$i];
 							}
-							if(!$this->get_data_check){redirect('Front');
+							if($this->get_data_check()){redirect('Front');
 							}
                             $this->Admin_model->update_all('product',$data_stk,$where_stk);
                         }else{
@@ -488,7 +494,7 @@ class Admin extends CI_Controller{
         foreach($prev_data as $prev_row){
             $prev_stock = $prev_row['stock'];
 		}
-		if(!$this->get_data_check){redirect('Front');
+		if($this->get_data_check()){redirect('Front');
 		}
         $qty = $this->input->post('qty');
         $now_stock = $prev_stock - $qty;

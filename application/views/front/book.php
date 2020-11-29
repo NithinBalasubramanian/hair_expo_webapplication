@@ -48,24 +48,7 @@
                     <input type="text" name="email" id="email" class="form-control"  placeholder="Email" >
                   </div>
                 </div>
-                <div class="form-group col-md-6">
-                <label for="inputEmail3" class="col-sm-6 control-label">Service : *</label>
-                <div class="col-sm-12">
-                  <select class="form-control" name="service_id">
-                  <option value="">Choose Service</option>
-                  <?php $name=$this->Admin_model->table_column('service');
-                  if(count($name) > 0)
-                  {
-                      foreach($name as $row_name)
-                      { ?>
-                        <option value="<?php echo $row_name['id']; ?>"><?php echo strtoupper($row_name['service_type']); ?></option>
-                <?php }
-                  }
-                  ?>
-                  </select>
-                  </div>
-                </div>
-              </div>
+                
               <div class="row">
               <div class="form-group col-md-6">
                     <label for="inputEmail3" class="col-sm-6 control-label">Date : </label>
@@ -81,9 +64,33 @@
                     <input type="time" name= "time" id="" class="form-control" id="inputEmail3" placeholder="Time" >
                   </div>
                 </div>
-                
+                <div class="col-md-6"></div>
+              </div>
                 </div>
               </div>
+              <div class="row add_more">
+              <div class="form-group col-md-8 row">
+                <label for="inputEmail3" class="col-sm-6 control-label">Service : *</label>
+                <div class="col-sm-8">
+                  <select class="form-control" name="service_id[]">
+                  <option value="">Choose Service</option>
+                  <?php $name=$this->Admin_model->table_column('service');
+                  if(count($name) > 0)
+                  {
+                      foreach($name as $row_name)
+                      { ?>
+                        <option value="<?php echo $row_name['id']; ?>"><?php echo strtoupper($row_name['service_type']); ?></option>
+                <?php }
+                  }
+                  ?>
+                  </select>
+                  </div>
+                <a href="javascript:void(0);" class="addCF col-sm-1 ">
+                  <button type="button" style="" id="btn1" class="btn btn-info btn-flat add"><i class="fa fa-plus-circle" aria-hidden="true"></i>
+                  </button> 
+                </a>
+                </div>
+                </div>
 
               
 
@@ -136,5 +143,13 @@ $(document).on('keyup','#contact',function(){
       $('#customer_id').html(data);
     }
   });
+});
+$(document).ready(function(){
+	$(".addCF").click(function(){
+    $(".add_more").append(' <div class="form-group col-md-8 row"><label for="inputEmail3" class="col-sm-6 control-label">Service : *</label><div class="col-sm-8"><select class="form-control" name="service_id[]"><option value="">Choose Service</option><?php $name=$this->Admin_model->table_column('service');if(count($name) > 0){foreach($name as $row_name){ ?><option value="<?php echo $row_name['id']; ?>"><?php echo strtoupper($row_name['service_type']); ?></option><?php }}?></select></div><a href="javascript:void(0);" class="Remove col-sm-1 "><button type="button" style="" id="btn1" class="btn btn-danger btn-flat"><i class="fa fa-trash" aria-hidden="true"></i></button> </a></div></div>');
+    });
+});
+$(document).on('click', "a.Remove", function() { 
+    $(this).parent().remove();
 });
 </script>

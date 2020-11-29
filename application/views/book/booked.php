@@ -44,10 +44,13 @@
                   <td><?php echo strtoupper($row_1["customer_name"]); ?></td>
                   <td><?php echo $row_1["contact"]; ?></td>
                   <?php } ?>
-                  <?php $ser = $this->Admin_model->table_column('service','id',$row['service_id']);
+                  <td>
+                  <?php $serv = explode(",",$row['service_id']); 
+                  foreach($serv as $s_row){ $ser = $this->Admin_model->table_column('service','id',$s_row);
 				foreach($ser as $row_2){ ?>
-                  <td><?php echo $row_2["service_type"]; ?></td>
-                  <?php } ?>
+                  <?php echo $row_2["service_type"]; ?>,
+                  <?php } } ?>
+                  </td>
                   <td><?php echo date("d-m-Y", strtotime($row['date'])); ?></td>
                   <td><?php echo date("h:i a", strtotime($row['time'])); ?></td>
        <?php $i++; } ?>
