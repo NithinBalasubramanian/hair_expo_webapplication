@@ -30,6 +30,7 @@
                   <th>Service</th>
                   <th>Date</th>
                   <th>Time</th>
+                  <th>Action</th>
                 </tr>
                 </thead>
                 <tbody>
@@ -53,6 +54,7 @@
                   </td>
                   <td><?php echo date("d-m-Y", strtotime($row['date'])); ?></td>
                   <td><?php echo date("h:i a", strtotime($row['time'])); ?></td>
+                  <td><a href="" class="btn btn-sm btn-warning">Invoice</a></td>
        <?php $i++; } ?>
         <?php } ?>
                 </tbody>
