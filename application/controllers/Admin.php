@@ -280,7 +280,7 @@ class Admin extends CI_Controller{
 			echo json_encode($data);
 		}
 	}
-	public function Add_invoice($tablename,$folder,$page,$current_page)
+	public function Add_invoice($tablename,$folder,$page,$current_page,$id = FALSE)
 	{
 		$data=array();
 		$columns = $this->Admin_model->table($tablename);
@@ -318,6 +318,11 @@ class Admin extends CI_Controller{
 		{
 			$data['service_id']=$service[$i];
 			$insert=$this->Admin_model->create($tablename,$data);
+		}
+		if($id != FALSE){
+			$where_up['id']=$id;
+			$data_up['status'] = 0;
+			$this->Admin_model->update_all('booking',$data_up,$where_up);
 		}
 		if(isset($insert)){
 			$invoice_no = $this->input->post('invoice_no');
@@ -422,9 +427,7 @@ class Admin extends CI_Controller{
 	}
 	public function Purchase($tablename,$foldername,$page,$current_page)
 	{
-	   
-	      
-             $invoice=$this->input->post('purchase_invoice_no');
+            $invoice=$this->input->post('purchase_invoice_no');
 	        $date=$this->input->post('date');
 	        $grand_total=$this->input->post('grand_total');
             $type = $this->input->post('category');

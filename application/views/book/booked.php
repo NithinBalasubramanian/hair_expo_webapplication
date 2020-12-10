@@ -54,7 +54,7 @@
                   </td>
                   <td><?php echo date("d-m-Y", strtotime($row['date'])); ?></td>
                   <td><?php echo date("h:i a", strtotime($row['time'])); ?></td>
-                  <td><a href="" class="btn btn-sm btn-warning">Invoice</a></td>
+                  <td><a href="<?php echo base_url(); ?>View/book/book_details/<?php echo $row['id']; ?>" class="btn btn-sm btn-warning">Invoice</a></td>
        <?php $i++; } ?>
         <?php } ?>
                 </tbody>

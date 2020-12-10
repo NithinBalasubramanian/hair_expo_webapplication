@@ -141,11 +141,11 @@
         Booking
       </div>
       <li class="nav-item">
-        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsefourr28" aria-expanded="true" aria-controls="collapsefour">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapsefourr285" aria-expanded="true" aria-controls="collapsefour">
         <i class="fa fa-cog" aria-hidden="true"></i>
           <span>Booking</span>
         </a>
-        <div id="collapsefourr28" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+        <div id="collapsefourr285" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
           <div class="bg-white py-2 collapse-inner rounded">
             <h6 class="collapse-header">Booking Management:</h6>
             <a class="collapse-item" href="<?php echo base_url();?>View/book/booked">Booked list</a>

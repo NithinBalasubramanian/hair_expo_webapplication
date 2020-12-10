@@ -62,6 +62,7 @@ $route['Login/(:any)']='Admin/Login/$1';
 $route['Edit_setting/(:any)/(:any)/(:any)'] = 'Admin/Edit_setting/$1/$2/$3';
 $route['Update_all/(:any)/(:any)/(:any)/(:any)/(:any)'] = 'Admin/Update_all/$1/$2/$3/$4/$5';
 $route['Add_invoice/(:any)/(:any)/(:any)/(:any)'] = 'Admin/Add_invoice/$1/$2/$3/$4';
+$route['Add_invoice/(:any)/(:any)/(:any)/(:any)/(:any)'] = 'Admin/Add_invoice/$1/$2/$3/$4/$5';
 $route['Insert_order/(:any)/(:any)'] = 'Admin/Insert_order/$1/$2';
 $route['Edit_invoice_setting/(:any)/(:any)/(:any)']='Admin/Edit_invoice_setting/$1/$2/$3';
 $route['Purchase/(:any)/(:any)/(:any)/(:any)']='Admin/Purchase/$1/$2/$3/$4';
