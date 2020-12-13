@@ -55,12 +55,12 @@
                                     <li><a href="#">Pages</a>
                                         <ul class="dropdown">
                                             <li><a href="<?php echo base_url(); ?>">- Home</a></li>
-                                            <li><a href="./about.html">- About Us</a></li>
-                                            <li><a href="./service.html">- Services</a></li>
-                                            <li><a href="./portfolio.html">- Portfolio</a></li>
-                                            <li><a href="./blog.html">- Blog</a></li>
-                                            <li><a href="./single-blog.html">- Blog Details</a></li>
-                                            <li><a href="./contact.html">- Contact</a></li>
+                                            <li><a href="<?php echo base_url(); ?>Front/View/about">- About Us</a></li>
+                                            <li><a href="<?php echo base_url(); ?>Front/View/service">- Services</a></li>
+                                            <li><a href="<?php echo base_url(); ?>Front/View/portfolio">- Portfolio</a></li>
+                                            <li><a href="<?php echo base_url(); ?>Front/View/blog">- Blog</a></li>
+                                            <li><a href="<?php echo base_url(); ?>Front/View/single-blog">- Blog Details</a></li>
+                                            <li><a href="<?php echo base_url(); ?>Front/View/contact">- Contact</a></li>
                                             <li><a href="#">- Dropdown</a>
                                                 <ul class="dropdown">
                                                     <li><a href="#">- Dropdown Item</a></li>
@@ -71,11 +71,11 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li><a href="./portfolio.html">Portfolio</a></li>
-                                    <li><a href="./service.html">Services</a></li>
-                                    <li><a href="./about.html">About Us</a></li>
-                                    <li><a href="./blog.html">Blog</a></li>
-                                    <li><a href="./contact.html">Contact</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Front/View/portfolio">Portfolio</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Front/View/service">Services</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Front/View/about">About Us</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Front/View/blog">Blog</a></li>
+                                    <li><a href="<?php echo base_url(); ?>Front/View/contact">Contact</a></li>
                                 </ul>
 
                                 <!-- Cart Icon -->

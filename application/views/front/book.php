@@ -72,7 +72,7 @@
                 </div>
               </div>
               <div class="row add_more col-md-12">
-              <div class="form-group col-md-6 row">
+              <div class="form-group col-md-8 row">
                 <label for="inputEmail3" class="col-sm-6 control-label">Service : *</label>
                 <div class="col-sm-8">
                   <select class="form-control" name="service_id[]">
