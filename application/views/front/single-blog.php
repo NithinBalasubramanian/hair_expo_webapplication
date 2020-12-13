@@ -19,7 +19,7 @@
             <div class="row">
                 <div class="col-12">
                     <div class="post-thumbnail mb-50">
-                        <img src="img/bg-img/42.jpg" alt="">
+                        <img src="<?php echo base_url(); ?>assets/front/img/bg-img/42.jpg" alt="">
                     </div>
                 </div>
             </div>
@@ -68,7 +68,7 @@
                         <!-- Author Meta -->
                         <div class="author-meta d-flex align-items-center">
                             <div class="author-avatar">
-                                <img src="img/bg-img/43.jpg" alt="">
+                                <img src="<?php echo base_url(); ?>assets/front/img/bg-img/43.jpg" alt="">
                             </div>
                             <div class="author-text">
                                 <p>Gusest Writer</p>
@@ -131,7 +131,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-post-area mb-80">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/1.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/1.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Nina Dobrev Got a Major Haircut and Doesn't Look Like Nina Dobrev.</a>
@@ -148,7 +148,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-post-area mb-80">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/2.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/2.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Finally: How to Make Your Agressively Straight Hair Hold a Curl</a>
@@ -165,7 +165,7 @@
                 <div class="col-12 col-md-6 col-lg-4">
                     <div class="single-post-area mb-80">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/3.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/3.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Yes, Emilia Clarke Just Cut Off All Her Hair Into a Tiny Bob</a>

@@ -37,13 +37,13 @@
                 </div>
             </div>
             <!-- Service Thumbnail -->
-            <div class="service-thumbnail bg-img jarallax" style="background-image: url(img/bg-img/30.jpg);"></div>
+            <div class="service-thumbnail bg-img jarallax" style="background-image: url(<?php echo base_url(); ?>assets/front/img/bg-img/30.jpg);"></div>
         </div>
 
         <!-- Single Service Item -->
         <div class="single--service--item odd-item d-flex flex-wrap align-items-center">
             <!-- Service Thumbnail -->
-            <div class="service-thumbnail bg-img jarallax" style="background-image: url(img/bg-img/31.jpg);"></div>
+            <div class="service-thumbnail bg-img jarallax" style="background-image: url(<?php echo base_url(); ?>assets/front/img/bg-img/31.jpg);"></div>
 
             <!-- Service Content -->
             <div class="service-content">
@@ -70,7 +70,7 @@
                 </div>
             </div>
             <!-- Service Thumbnail -->
-            <div class="service-thumbnail bg-img jarallax" style="background-image: url(img/bg-img/32.jpg);"></div>
+            <div class="service-thumbnail bg-img jarallax" style="background-image: url(<?php echo base_url(); ?>assets/front/img/bg-img/32.jpg);"></div>
         </div>
 
     </section>

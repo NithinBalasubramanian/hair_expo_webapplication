@@ -31,7 +31,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/33.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/33.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Nina Dobrev Got a Major Haircut and Doesn't Look Like Nina Dobrev.</a>
@@ -49,7 +49,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/34.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/34.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Finally: How to Make Your Aggressively Straight Hair Hold a Curl</a>
@@ -67,7 +67,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/35.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/35.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Yes, Emilia Clarke Just Cut Off All Her Hair Into a Tiny Bob</a>
@@ -85,7 +85,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/36.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/36.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Megyn Kelly loses it over Kavanaugh FBI investigation.</a>
@@ -103,7 +103,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/37.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/37.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Hundreds of migrant children moved in the middle of the night.</a>
@@ -121,7 +121,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/38.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/38.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">How the media encourages – and sustains – political warfare</a>
@@ -139,7 +139,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/39.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/39.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">World’s Most Expensive Home Hits Market for €1 Billion</a>
@@ -157,7 +157,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/40.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/40.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">Kavanaugh hearing: alleged sexual offenders get job anyways.</a>
@@ -175,7 +175,7 @@
                     <!-- Single Post Area -->
                     <div class="single-post-area">
                         <div class="post-thumbnail">
-                            <a href="single-blog.html"><img src="img/bg-img/41.jpg" alt=""></a>
+                            <a href="single-blog.html"><img src="<?php echo base_url(); ?>assets/front/img/bg-img/41.jpg" alt=""></a>
                         </div>
                         <div class="post-content">
                             <a href="#" class="post-title">“Fox &amp; Friends” host says Brett Kavanaugh is a victim of racial.</a>
