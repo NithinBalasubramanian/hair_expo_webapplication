@@ -5,9 +5,11 @@
     <h1 class="text-center">Book Service </h1>
 <form class="form-horizontal" action="<?php echo base_url(''); ?>Insert_order/register/Booking" method="post" enctype="multipart/form-data" >
               <div class="box-body">
-              <div class="radio">
+                 <div class="row">
+              <div class="radio col-md-6" style="padding-left:30px;">
                 <label style="margin-right: 13px;"><input type="radio" id="already_id" name="member" value="1" checked style="margin-right:10px;" >Already a Member</label>
                 <label style="margin-right:10px;"><input type="radio" id="new_id" name="member" value="2" style="margin-right:10px;">New Member</label>
+                </div>
                 </div>
                 <div class="row">
                 <div class="form-group col-md-6">
@@ -49,9 +51,9 @@
                   </div>
                 </div>
                 
-              <div class="row">
+              <div class="col-md-6 row">
               <div class="form-group col-md-6">
-                    <label for="inputEmail3" class="col-sm-6 control-label">Date : </label>
+                    <label for="inputEmail3" class="col-sm-7 control-label">Date : </label>
 
                     <div class="col-sm-12">
                       <input type="date" name= "date" id="" class="form-control" id="inputEmail3" placeholder="Date" >
@@ -64,12 +66,13 @@
                     <input type="time" name= "time" id="" class="form-control" id="inputEmail3" placeholder="Time" >
                   </div>
                 </div>
-                <div class="col-md-6"></div>
+                <div class="col-md-6">
+                </div>
               </div>
                 </div>
               </div>
-              <div class="row add_more">
-              <div class="form-group col-md-8 row">
+              <div class="row add_more col-md-12">
+              <div class="form-group col-md-6 row">
                 <label for="inputEmail3" class="col-sm-6 control-label">Service : *</label>
                 <div class="col-sm-8">
                   <select class="form-control" name="service_id[]">
